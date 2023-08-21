@@ -1,3 +1,60 @@
 <resources>
     <string name="app_name">Artic Swift</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="screen_details">Sell houses easily with the help of Listenoryx and to make this line big I am writing more.</string>
+    <string name="text_subtitle"><font color="#FF3751FF"><b>Login</b></font> if you already have an account.</string>
+    <string name="no_account">I don\'t have an account<font color="#FF3751FF"><b> Register</b></font></string>
+    <string name="text_subtitle_create"><font color="#FF3751FF"><b>Register</b></font> to get started with the app.</string>
+    <string name="already_account">I already have an account<font color="#FF3751FF"><b> Login</b></font></string>
+    <string name="back_to_login">Back to<font color="#FF3751FF"><b> Login</b></font></string>
+    <string name="forgot_pw"><font color="#FF3751FF"><b>Reset Password</b></font> if you forgot your password.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="menu_button">menu_button</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="coming_soon">Coming soon!!!</string>
+    <string name="share">Share</string>
+    <string name="logout">Logout</string>
+    <string name="settings">Settings</string>
+    <string name="communication">Communication</string>
+    <string name="about">About</string>
+    <string name="support">Support</string>
+    <string name="expense_your_rides">Expense Your Rides</string>
+    <string name="my_rides">My Rides</string>
+    <string name="promotions">Promotions</string>
+    <string name="payment">Payment</string>
+    <string name="splash_screen">splash screen</string>
+    <string name="register">Register</string>
+    <string name="passenger">Passenger</string>
+    <string name="driver">Driver</string>
+    <string name="onboarding_images">onboarding images</string>
+    <string name="book_your_car">Book your car</string>
+    <string name="finish">Finish</string>
+    <string name="anywhere_you_are">Anywhere you are</string>
+    <string name="next">Next</string>
+    <string name="at_anytime">At anytime</string>
+    <string name="settings_fragment">Settings Fragment</string>
+    <string name="share_fragment">Share Fragment</string>
+    <string name="my_ride_fragment">MY RIDE FRAGMENT</string>
+    <string name="support_fragment">SUPPORT FRAGMENT</string>
+    <string name="payment_fragment">Payment Fragment</string>
+    <string name="about_fragment">About Fragment</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="input_email_or_username">input email or username</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="input_full_name">input full name</string>
+    <string name="input_email">input email</string>
+    <string name="input_username">input username</string>
+    <string name="input_password">input password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="edidem">Edidem</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="rate_us">rate us</string>
+    <string name="rating">Rating</string>
+    <string name="login_to_app">Login to app</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login">Login</string>
+
+
 </resources>

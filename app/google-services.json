@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "724695200286",
+    "project_id": "artic-swift",
+    "storage_bucket": "artic-swift.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724695200286:android:7db6f97fdcb95cd583340f",
+        "android_client_info": {
+          "package_name": "com.project.articswift"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724695200286-dp3e0lmkph4llmcpv7inaj618m3bd62c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdmts85FaQ-FhYV-jJKvQAtAs2bERsoFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724695200286-dp3e0lmkph4llmcpv7inaj618m3bd62c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

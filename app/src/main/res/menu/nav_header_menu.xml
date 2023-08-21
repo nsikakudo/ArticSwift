@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view"
+    >
+
+ <group android:checkableBehavior="single">
+
+     <item android:id="@+id/payment"
+         android:icon="@drawable/payment"
+         android:title="@string/payment"/>
+
+     <item android:id="@+id/promotions"
+         android:icon="@drawable/baseline_local_offer_24"
+         android:title="@string/promotions"/>
+
+     <item android:id="@+id/my_ride"
+         android:icon="@drawable/my_rides"
+         android:title="@string/my_rides"/>
+
+     <item android:id="@+id/expense_your_ride"
+         android:icon="@drawable/expenses"
+         android:title="@string/expense_your_rides"/>
+
+     <item android:id="@+id/support"
+         android:icon="@drawable/support"
+         android:title="@string/support"/>
+
+     <item android:id="@+id/about"
+         android:icon="@drawable/about"
+         android:title="@string/about"/>
+ </group>
+
+    <item
+        android:title="@string/communication"
+        android:textStyle="bold"
+        >
+        <menu>
+            <item android:id="@+id/settings"
+                android:icon="@drawable/settings"
+                android:title="@string/settings"/>
+
+            <item android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="@string/logout"/>
+
+            <item android:id="@+id/share"
+                android:icon="@drawable/share"
+                android:title="@string/share"/>
+        </menu>
+    </item>
+
+</menu>
