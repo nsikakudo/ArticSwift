@@ -52,24 +52,34 @@ class HomeFragment : Fragment() {
 
             when(it.itemId){
 
-                R.id.payment -> replaceFragment(PaymentFragment())
-                R.id.promotions -> replaceFragment(PromotionFragment())
-                R.id.my_ride -> replaceFragment(MyRidesFragment())
-                R.id.expense_your_ride -> replaceFragment(ExpenseRideFragment())
-                R.id.support -> replaceFragment(SupportFragment())
-                R.id.about -> replaceFragment(AboutFragment())
-                R.id.settings -> replaceFragment(SettingsFragment())
+                R.id.payment -> replaceFragment(findNavController().navigate(R.id.action_homeFragment_to_paymentFragment))
+                R.id.promotions -> replaceFragment(findNavController().navigate(R.id.action_homeFragment_to_promotionFragment))
+                R.id.my_ride -> replaceFragment(findNavController().navigate(R.id.action_homeFragment_to_myRidesFragment))
+                R.id.expense_your_ride -> replaceFragment(findNavController().navigate(R.id.action_homeFragment_to_expenseRideFragment))
+                R.id.support -> replaceFragment(findNavController().navigate(R.id.action_homeFragment_to_supportFragment))
+                R.id.about -> replaceFragment(findNavController().navigate(R.id.action_homeFragment_to_aboutFragment))
+                R.id.settings -> replaceFragment(findNavController().navigate(R.id.action_homeFragment_to_settingsFragment))
+                R.id.share -> replaceFragment(findNavController().navigate(R.id.action_homeFragment_to_shareFragment))
+
+//                R.id.payment -> replaceFragment(PaymentFragment())
+//                R.id.promotions -> replaceFragment(PromotionFragment())
+//                R.id.my_ride -> replaceFragment(MyRidesFragment())
+//                R.id.expense_your_ride -> replaceFragment(ExpenseRideFragment())
+//                R.id.support -> replaceFragment(SupportFragment())
+//                R.id.about -> replaceFragment(AboutFragment())
+//                R.id.settings -> replaceFragment(SettingsFragment())
+
                 R.id.logout -> Toast.makeText(requireContext(), "Clicked Logout", Toast.LENGTH_SHORT).show()
-                R.id.share -> Toast.makeText(requireContext(), "Clicked Share", Toast.LENGTH_SHORT).show()
             }
             true
         }
     }
 
-    private fun Fragment.replaceFragment(fragment: Fragment) {
+//    private fun Fragment.replaceFragment(fragment: Fragment) {
+    private fun Fragment.replaceFragment(fragment: Unit) {
         val fragmentManager: FragmentManager = requireActivity().supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frameLayout, fragment)
+//        fragmentTransaction.replace(R.id.frameLayout, fragment)
         fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()
     }
