@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
@@ -15,6 +16,7 @@ import com.jakewharton.rxbinding2.widget.RxTextView
 import com.project.articswift.R
 import com.project.articswift.databinding.FragmentSignInBinding
 import io.reactivex.Observable
+import kotlin.system.exitProcess
 
 @SuppressLint("CheckResult")
 class SignInFragment : Fragment() {
@@ -104,15 +106,19 @@ class SignInFragment : Fragment() {
                     Toast.makeText(requireContext(), it.exception?.message, Toast.LENGTH_SHORT).show()
                 }
             }
+
+        handleOnBackPressed()
     }
 
-    private fun onBackPressed() {
-        requireActivity().finish()
-    }
-    override fun onDestroy() {
-        onBackPressed()
-        Log.d("MYTAG", "Back pressed")
-        super.onDestroy()
+    private fun handleOnBackPressed() {
+        activity?.onBackPressedDispatcher?.addCallback(
+            viewLifecycleOwner,
+            object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    activity!!.finish()
+                    exitProcess(0)
+                }
+            })
     }
 
 }

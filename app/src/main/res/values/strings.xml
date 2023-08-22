@@ -55,6 +55,7 @@
     <string name="login_to_app">Login to app</string>
     <string name="forgot_password">Forgot Password</string>
     <string name="login">Login</string>
-
+    <string name="back_button">back_button</string>
+    <string name="rate_the_app">Rate the app</string>
 
 </resources>
